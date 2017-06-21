@@ -1,0 +1,32 @@
+{
+  "name": "MonitorMessage",
+  "base": "PersistedModel",
+  "postgresql": {
+    "schema": "msb",
+    "table": "monitormessage"
+  },
+  "properties": {
+    "uuid": {
+      "type": "String",
+      "required": false,
+      "postgresql": {
+        "columnName": "uuid",
+        "dataType": "text",
+        "nullable": "YES"
+      }
+    },
+    "data": {
+      "type": "String",
+      "required": false,
+      "postgresql": {
+        "columnName": "data",
+        "dataType": "jsonb",
+        "nullable": "YES"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
